@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./Login.css";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
 
@@ -54,7 +55,7 @@ const Login = () => {
               onClick={() => setMostrarSenha((prev) => !prev)}
               aria-label={mostrarSenha ? "Ocultar senha" : "Mostrar senha"}
             >
-              {mostrarSenha ? "---" : "<|>r"}
+              {mostrarSenha ? "---" : "<|>"}
             </button>
           </div>
         </div>

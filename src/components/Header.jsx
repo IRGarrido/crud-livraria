@@ -1,14 +1,15 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
+import "./Header.css";
 
 const Header = () => {
-  const location = useLocation;
+  const location = useLocation();
 
   return (
     <header className="app-header">
       <div className="header-content">
         <div className="logo-area">
-          <img src="/logo.svg" alt="Logo" className="header-logo" />
+          <img src="/logo.png" alt="Logo" className="header-logo" />
           <span className="app-title">LIVRARIA</span>
         </div>
 
